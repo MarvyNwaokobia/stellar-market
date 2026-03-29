@@ -385,7 +385,7 @@ export default function JobDetailPage() {
     user &&
     address &&
     ((user.id === job.client.id && address === job.client.walletAddress) ||
-      isFreelancerOnJob),
+      isFreelancerOnJob)
   );
   const pendingRevision = job.revisionProposal ?? null;
   const canRespondToRevision = Boolean(
